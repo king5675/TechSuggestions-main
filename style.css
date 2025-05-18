@@ -1,0 +1,209 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f0f2f5; /* A slightly more modern BG color */
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align top for long forms on small screens */
+    min-height: 100vh;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #1c1e21; /* Darker, common heading color */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+fieldset legend {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b4f56; /* Softer label color */
+    font-weight: 600; /* Slightly bolder */
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px 15px; /* Generous padding for mobile */
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #007bff; /* Highlight focus */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    outline: none;
+}
+
+
+fieldset {
+    border: 3px solid #ccd0d5;
+    border-radius: 6px;
+    padding: 10px 15px 15px 15px;
+}
+
+fieldset legend {
+    padding: 0 5px; /* Give legend some breathing room */
+    margin-left: 5px; /* Align with checkbox content */
+}
+
+fieldset div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+fieldset div:last-child {
+    margin-bottom: 0;
+}
+
+fieldset input[type="checkbox"] {
+    margin-right: 12px;
+    width: 20px; /* Slightly larger checkbox */
+    height: 20px;
+    accent-color: #007bff; /* Modern way to color checkboxes */
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent checkbox from shrinking */
+}
+
+fieldset label { /* For checkbox labels */
+    font-weight: normal;
+    color: #1c1e21;
+    cursor: pointer;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+
+button[type="submit"] {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #1DAE54;
+}
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.section-title {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;           
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .follow-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .follow-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .follow-button img {
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    .whatsapp-button {
+       display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 0 15px #25D366;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      box-shadow: 0 0 30px #25D366;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-button i {
+      font-size: 20px;
+    }
+    
+    .whatsapp-icon {
+  height: 24px;  /* Match icon height to button font size */
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Make sure the page looks good on very small screens */
+@media (max-width: 360px) {
+    .container {
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .form-group input[type="text"],
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 1em;
+    }
+    
+    fieldset label {
+        font-size: 0.9em; /* Adjust if text wrapping is an issue */
+    }
+}
+
