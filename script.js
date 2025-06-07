@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Include country code, without '+', '00' or any special characters.
     // Example for a US number like +1 (123) 456-7890: '11234567890'
     // Example for an Indian number like +91 98765 43210: '919876543210'
-    const whatsappNumber = '2349031705641'; // <--- REPLACE THIS!
+    const whatsappNumber = '2348029214393'; // <--- REPLACE THIS!
 
     if (!techForm) {
         console.error('Form not found!');
