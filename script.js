@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Include country code, without '+', '00' or any special characters.
     // Example for a US number like +1 (123) 456-7890: '11234567890'
     // Example for an Indian number like +91 98765 43210: '919876543210'
-    const whatsappNumber = '2348029214393'; // <--- REPLACE THIS!
+    const whatsappNumber = '263775296525'; // <--- REPLACE THIS!
 
     if (!techForm) {
         console.error('Form not found!');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let message = `Hi! My name is ${name}.\n\nI'm interested in tech suggestions and resources:\n\n`;
+        let message = `Hey! I'm ${name}.\n\nI'm interested in tech suggestions and resources:\n\n`;
 
         if (selectedSuggestions.length > 0) {
             message += "*AREAS OF INTEREST:*\n";
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message += "\n";
         }
         
-        message += "Could you please provide some guidance or suggestions? Thank you!\n\n> © 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝙲𝚘𝚍𝚎𝚡 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝚃𝚎𝚌𝚑";
+        message += "Could you please provide some guidance or suggestions? Thank you!\n\n> 𝑘𝑖𝑛𝑔 𝑜𝑓 𝑙𝑖𝑒𝑠 𝑡𝑒𝑐ℎ 𝑔𝑢𝑦";
 
         const encodedMessage = encodeURIComponent(message);
         // Ensure the number is clean (only digits) if it wasn't already
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Provide feedback to user
         submitButton.disabled = true;
-        submitButton.textContent = 'Redirecting...';
+        submitButton.textContent = 'Displaying...';
 
         // Open WhatsApp link
-        window.open(whatsappURL, '_blank');
+        window.open(whatsappURL, '_parent');
 
         // Reset button after a short delay, in case the redirect fails or user comes back
         setTimeout(() => {
